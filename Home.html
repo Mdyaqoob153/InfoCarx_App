@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infocars | Luxury Automotive Hub</title>
+    
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.0.0/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="home.css">
+
+    <!-- Preload Assets -->
+    <link rel="preload" href="home.js" as="script">
+    <link rel="preload" href="hero-bg.jpg" as="image">
+
+    <!-- Preload critical resources -->
+<link rel="preload" href="styles.css" as="style">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+</head>
+<body class="custom-scrollbar">
+    <!-- Dynamic Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient fixed-top">
+        <div class="container-xl">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fa-solid fa-car-side me-2"></i>Infocars
+            </a>
+            
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler border-0" type="button" 
+                data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Desktop Menu -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class="fa-solid fa-house me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Brands
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item d-flex align-items-center" href="BMW.html">
+                                <img src="bmw-logo.svg" width="20" class="me-2">BMW
+                            </a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="ROLLS ROYCE.html">
+                                <img src="rr-logo.svg" width="20" class="me-2">Rolls Royce
+                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Enhanced Search -->
+                <form class="d-flex position-relative search-form">
+                    <input class="form-control me-2" type="search" 
+                        placeholder="Search vehicles..." aria-label="Search"
+                        data-bs-toggle="dropdown" aria-haspopup="true">
+                    <button class="btn btn-outline-light" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    
+                    <!-- Search Suggestions -->
+                    <div class="dropdown-menu search-suggestions w-100">
+                        <div class="list-group">
+                            <a href="BMW.html" class="list-group-item list-group-item-action">
+                                BMW Models
+                            </a>
+                            <a href="ROLLS ROYCE.html" class="list-group-item list-group-item-action">
+                                Rolls Royce Collection
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Offcanvas -->
+     
+   <!-- Update Navigation in all HTML files (home.html, bmw.html, rolls-royce.html) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">Infocars</a>
+        
+        <!-- Navigation Items -->
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bmw.html">BMW</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rolls-royce.html">Rolls Royce</a>
+                </li>
+            </ul>
+            
+            <!-- Search Form -->
+            <form class="d-flex me-3">
+                <div class="input-group">
+                    <input type="search" 
+                           class="form-control" 
+                           placeholder="Search vehicles..." 
+                           aria-label="Search">
+                    <button class="btn btn-outline-light" 
+                            type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+            
+            <!-- Login Button -->
+            <div class="d-flex">
+                <a href="login.html" 
+                   class="btn btn-warning">
+                    <i class="fas fa-sign-in-alt me-2"></i>Login
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="swiper main-carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="hero-bg.jpg" class="hero-image" 
+                        alt="Luxury Cars Showcase"
+                        loading="lazy">
+                        <div class="hero-overlay">
+                            <h1>Experience Automotive Excellence</h1>
+                            <p>Discover the world's finest luxury vehicles</p>
+                        <div class="mt-4">
+                            <a href="#featured" class="btn btn-lg btn-primary me-2">
+                                Explore Collection
+                            </a>
+                            <a href="#brands" class="btn btn-lg btn-outline-light">
+                                View Brands
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional Slides -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Featured Vehicles -->
+    <main class="container-xl py-5" id="featured">
+        <h2 class="section-title mb-5 text-center">Featured Luxury Vehicles</h2>
+        
+        <div class="row g-4" data-masonry='{"percentPosition": true}'>
+            <!-- Rolls Royce Ghost -->
+            <div class="col-md-6 col-lg-4 col-xxl-3">
+                <article class="card vehicle-card h-100">
+                    <a href="ROLLS ROYCE.html" class="card-image-link">
+                        <img src="rolls-royce-ghost.jpg" 
+                            class="card-img-top img-fluid" 
+                            alt="Rolls Royce Ghost"
+                            loading="lazy">
+                        <div class="card-hover-overlay"></div>
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title text-info">Rolls Royce Ghost</h3>
+                        <div class="card-meta text-muted mb-3">
+                            <span class="me-3">
+                                <i class="fa-solid fa-gauge-high me-1"></i>12,345 mi
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-calendar me-1"></i>2023
+                            </span>
+                        </div>
+                        <p class="card-text">Epitome of luxury with hand-crafted perfection...</p>
+                        <a href="ROLLS ROYCE.html" class="btn btn-info stretched-link">
+                            View Details
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- BMW M8 -->
+            <div class="col-md-6 col-lg-4 col-xxl-3">
+                <article class="card vehicle-card h-100">
+                    <a href="BMW.html" class="card-image-link">
+                        <img src="m8.jpg" 
+                            class="card-img-top img-fluid" 
+                            alt="BMW M8 Competition"
+                            loading="lazy">
+                        <div class="card-hover-overlay"></div>
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title text-primary">BMW M8 Competition</h3>
+                        <div class="card-meta text-muted mb-3">
+                            <span class="me-3">
+                                <i class="fa-solid fa-gauge-high me-1"></i>8,765 mi
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-calendar me-1"></i>2023
+                            </span>
+                        </div>
+                        <p class="card-text">High-performance luxury coupe with 617hp...</p>
+                        <a href="BMW.html" class="btn btn-primary stretched-link">
+                            View Details
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Additional Vehicles -->
+        </div>
+    </main>
+
+    <!-- Brands Section -->
+    <section class="brands-section py-5 bg-dark" id="brands">
+        <div class="container-xl">
+            <h2 class="section-title mb-5 text-center">Our Luxury Brands</h2>
+            
+            <div class="row g-4">
+                <!-- BMW Brand Card -->
+                <div class="col-md-6">
+                    <div class="brand-card bg-gradient-primary">
+                        <img src="bmw-logo.svg" alt="BMW Logo" 
+                            class="brand-logo">
+                        <h3 class="brand-title">BMW</h3>
+                        <p class="brand-description">
+                            The Ultimate Driving Machine - Performance meets luxury
+                        </p>
+                        <a href="BMW.html" class="btn btn-light">
+                            Explore BMW Collection
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Rolls Royce Brand Card -->
+                <div class="col-md-6">
+                    <div class="brand-card bg-gradient-secondary">
+                        <img src="rr-logo.svg" alt="Rolls Royce Logo" 
+                            class="brand-logo">
+                        <h3 class="brand-title">Rolls Royce</h3>
+                        <p class="brand-description">
+                            Strive for perfection in every detail
+                        </p>
+                        <a href="ROLLS ROYCE.html" class="btn btn-light">
+                            Explore Rolls Royce
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-4">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Infocars</h5>
+                    <p>Your gateway to luxury automotive excellence</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="BMW.html">BMW</a></li>
+                        <li><a href="ROLLS ROYCE.html">Rolls Royce</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <p>Email: info@infocars.com</p>
+                    <div class="social-links">
+                        <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modern Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.0/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script src="home.js" type="module"></script>
+</body>
+</html>

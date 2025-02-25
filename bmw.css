@@ -1,0 +1,72 @@
+:root {
+  --bmw-primary: #0066b1;
+  --bmw-accent: #e4002b;
+  --bmw-dark: #1a1a1a;
+  --bmw-light: #f0f0f0;
+}
+
+.bmw-theme {
+  background: var(--bmw-dark);
+  color: var(--bmw-light);
+}
+
+.bmw-hero {
+  background: linear-gradient(135deg, 
+      var(--bmw-primary) 0%, 
+      var(--bmw-dark) 100%);
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.bmw-performance-badge {
+  background: var(--bmw-accent);
+  transform: skewX(-15deg);
+  padding: 0.5rem 2rem;
+  display: inline-block;
+}
+
+.bmw-specs-table td {
+  border-color: rgba(255,255,255,0.1);
+}
+
+.bmw-model-card {
+  border: 2px solid var(--bmw-primary);
+  transition: transform 0.3s ease;
+}
+
+.bmw-model-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,102,177,0.3);
+}
+
+@media (max-width: 768px) {
+  .bmw-configurator-panel {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 70vh;
+  }
+}
+
+
+
+
+/* Add to styles.css */
+.vehicle-card {
+  height: 100%;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.vehicle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
