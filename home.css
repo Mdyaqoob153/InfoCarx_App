@@ -7,6 +7,20 @@
     --hover-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Add these styles to your existing CSS */
+.login-btn {
+    transition: all 0.3s ease;
+    border-color: rgba(255,255,255,0.3) !important;
+}
+
+.login-btn:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+    border-color: #fff !important;
+    transform: translateY(-2px);
+}
+
+
 /* Base Styles */
 body {
     background-color: var(--dark-bg);

@@ -74,7 +74,7 @@ body {
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
-    filter: brightness(2); /* Increase video brightness */
+    filter: brightness(3); /* Increase video brightness */
 }
 
 .video-overlay {
