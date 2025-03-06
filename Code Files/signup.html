@@ -10,7 +10,8 @@
 <body>
     <div class="video-container">
         <video autoplay muted loop id="authVideo">
-            <source src="signup.mp4" type="video/mp4">
+            <source src="Photos/signup.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
         </video>
         <div class="video-overlay"></div>
     </div>
@@ -36,6 +37,11 @@
                 <div class="form-group">
                     <label for="password"><i class="fas fa-lock"></i> Password</label>
                     <input type="password" id="password" required>
+                    <div class="password-strength">
+                        <div class="strength-bar">
+                            <div class="strength-progress"></div>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="form-group">
@@ -43,10 +49,10 @@
                     <input type="password" id="confirmPassword" required>
                 </div>
 
-                <div class="form-group terms">
+                <div class="terms">
                     <label>
-                        <input type="checkbox" required> I agree to the 
-                        <a href="#" class="terms-link">Terms & Conditions</a>
+                        <input type="checkbox" required>
+                        <span>I agree to the <a href="#" class="terms-link">Terms & Conditions</a></span>
                     </label>
                 </div>
 

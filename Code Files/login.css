@@ -102,7 +102,11 @@ body {
     border-color: var(--primary-color);
     background: rgba(255,255,255,0.1);
 }
-
+.f{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
 .form-options {
     display: flex;
     justify-content: space-between; /* Aligns items to the edges */
